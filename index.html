@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | social-media-dashboard-with-theme-switcher-master</title>
+  <script src="script.js" defer></script>
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="lg:px-32 py-8 px-8">
+  <header class="flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center">
+    <div>
+      <h1 class="text-2xl font-bold">Social Media Dashboard </h1>
+      <p class="text-sm text-slate-600 font-bold">Total Followers: 23,004</p>
+    </div>
+    <div class="flex items-center justify-between border-t-2 border-slate-300 py-4 sm:py-0 sm:border-0 sm:gap-2">
+      <span class="text-sm font-bold text-slate-500">Dark Mode</span>
+      <label class="relative inline-flex items-center cursor-pointer" for="checkbox">
+        <input type="checkbox" value="" class="sr-only peer" id="checkbox">
+        <div
+          class="w-12 h-6 bg-slate-400 rounded-full peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-gradient-to-r from-sky-400 to-teal-700  hover:bg-gradient-to-r from-sky-400 to-teal-700 ">
+        </div>
+      </label>
+    </div>
+  </header>
+
+  <section class="grid grid-cols-1 gap-4 sm:mt-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:grid-cols-4">
+    <div class="py-4 text-center border-t-4 border-blue-600 rounded Followers hover:bg-slate-200 hover:cursor-pointer">
+      <div class="flex flex-row justify-center items-center gap-2 my-4">
+        <img src="./images/icon-facebook.svg" alt="">
+        <p class="text-slate-500">@nathanf</p>
+      </div>
+      <h1 class="text-5xl font-bold">1987</h1>
+      <p class="tracking-[0.25rem] text-sm text-slate-500 uppercase">Followers</p>
+      <div class="flex items-center justify-center my-4 gap-1">
+        <img src="./images/icon-up.svg" alt="">
+        <p class="font-bold text-green-500">12 Today</p>
+      </div>
+    </div>
+    <div class="py-4 text-center border-t-4 border-sky-400 rounded Followers hover:bg-slate-200 hover:cursor-pointer">
+      <div class="flex flex-row justify-center items-center gap-2 my-4">
+        <img src="./images/icon-twitter.svg" alt="">
+        <p class="text-slate-500">@nathanf</p>
+      </div>
+      <h1 class="text-5xl font-bold">1044</h1>
+      <p class="tracking-[0.25rem] text-sm text-slate-500 uppercase">Followers</p>
+      <div class="flex items-center justify-center my-4 gap-1">
+        <img src="./images/icon-up.svg" alt="">
+        <p class="font-bold text-green-500">99 Today</p>
+      </div>
+    </div>
+    <div
+      class="py-4 text-center rounded Followers relative after:content-[''] after:absolute after:top-0  after:block after:w-full after:h-1 after:rounded after:bg-gradient-to-r from-yellow-500 to-pink-500  hover:bg-slate-200 hover:cursor-pointer">
+      <div class="flex flex-row justify-center items-center gap-2 my-4">
+        <img src="./images/icon-instagram.svg" alt="">
+        <p class="text-slate-500">@nathanf</p>
+      </div>
+      <h1 class="text-5xl font-bold">11k</h1>
+      <p class="tracking-[0.25rem] text-sm text-slate-500 uppercase">Followers</p>
+      <div class="flex items-center justify-center my-4 gap-1">
+        <img src="./images/icon-up.svg" alt="">
+        <p class="font-bold text-green-500">1099 Today</p>
+      </div>
+    </div>
+    <div class="py-4 text-center border-t-4 border-red-600 rounded Followers hover:bg-slate-200 hover:cursor-pointer">
+      <div class="flex flex-row justify-center items-center gap-2 my-4">
+        <img src="./images/icon-youtube.svg" alt="">
+        <p class="text-slate-500">@nathanf</p>
+      </div>
+      <h1 class="text-5xl font-bold">1987</h1>
+      <p class="tracking-[0.25rem] text-sm text-slate-500 uppercase">Followers</p>
+      <div class="flex items-center justify-center my-4 gap-1">
+        <img src="./images/icon-down.svg" alt="">
+        <p class="font-bold text-red-500">144 Today</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mt-16">
+    <h1 class="text-xl font-bold text-slate-600">Overview - Today</h1>
+    <div class="mt-12 px-4 grid grid-cols-1 gap-x-16 gap-y-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div class="flex flex-col gap-6 Overview p-4 rounded  hover:bg-slate-200 hover:cursor-pointer">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-slate-500">Page Views</p>
+          <img src="./images/icon-facebook.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between">
+          <h1 class="text-3xl font-bold">87</h1>
+          <div class="flex items-center gap-1">
+            <img src="./images/icon-up.svg" alt="">
+            <p class="text-green-500 font-bold">3%</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 Overview  p-4 rounded  hover:bg-slate-200 hover:cursor-pointer">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-slate-500">Likes</p>
+          <img src="./images/icon-facebook.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between">
+          <h1 class="text-3xl font-bold">52</h1>
+          <div class="flex items-center gap-1">
+            <img src="./images/icon-down.svg" alt="">
+            <p class="text-red-500 font-bold">2%</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 Overview p-4 rounded  hover:bg-slate-200 hover:cursor-pointer">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-slate-500">Likes</p>
+          <img src="./images/icon-instagram.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between">
+          <h1 class="text-3xl font-bold">5462</h1>
+          <div class="flex items-center gap-1">
+            <img src="./images/icon-up.svg" alt="">
+            <p class="text-green-500 font-bold">2257%</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 Overview p-4 rounded  hover:bg-slate-200 hover:cursor-pointer">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-slate-500">Profile Views</p>
+          <img src="./images/icon-instagram.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between">
+          <h1 class="text-3xl font-bold">52k</h1>
+          <div class="flex items-center gap-1">
+            <img src="./images/icon-up.svg" alt="">
+            <p class="text-green-500 font-bold">1375%</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 Overview p-4 rounded  hover:bg-slate-200 hover:cursor-pointer">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-slate-500">Retweets</p>
+          <img src="./images/icon-twitter.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between">
+          <h1 class="text-3xl font-bold">117</h1>
+          <div class="flex items-center gap-1">
+            <img src="./images/icon-up.svg" alt="">
+            <p class="text-green-500 font-bold">303%</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 Overview p-4 rounded hover:bg-slate-200 hover:cursor-pointer">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-slate-500">Page Views</p>
+          <img src="./images/icon-twitter.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between">
+          <h1 class="text-3xl font-bold">507</h1>
+          <div class="flex items-center gap-1">
+            <img src="./images/icon-up.svg" alt="">
+            <p class="text-green-500 font-bold">553%</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 Overview p-4 rounded  hover:bg-slate-200 hover:cursor-pointer">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-slate-500">Likes</p>
+          <img src="./images/icon-youtube.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between">
+          <h1 class="text-3xl font-bold">107</h1>
+          <div class="flex items-center gap-1">
+            <img src="./images/icon-down.svg" alt="">
+            <p class="text-red-500 font-bold">19%</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 Overview p-4 rounded  hover:bg-slate-200 hover:cursor-pointer">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-slate-500">Total Views</p>
+          <img src="./images/icon-youtube.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between">
+          <h1 class="text-3xl font-bold">1407</h1>
+          <div class="flex items-center gap-1">
+            <img src="./images/icon-down.svg" alt="">
+            <p class="text-red-500 font-bold">12%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+
+
+</html>
